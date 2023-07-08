@@ -1,1 +1,1 @@
-Home Assistant Supervisor Add-on에서 실행되도록 수정
+춘천 센트럴타워 푸르지오에서 작동되도록 수정
