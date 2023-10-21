@@ -651,7 +651,7 @@ def packet_processor(p):
          if ['value'} == '0300000000000000' :
            # state = {'floor': floor}
              state = {'state': 'off'}
-           # if rs485_floor == floor:
+           #if rs485_floor == floor:
                # state['state'] = 'off'
         else:
             state = {'state': 'off'}
