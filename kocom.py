@@ -645,12 +645,14 @@ def packet_processor(p):
             logtxt = '[MQTT publish|gas] data[{}]'.format(state)
             mqttc.publish('kocom/livingroom/gas/state', json.dumps(state), retain=True)
     elif p['type'] == 'send' and p['dest'] == 'elevator':
-        floor = int(p['value'][2:4], 16)
+       # floor = int(p['value'][2:4], 16)
         rs485_floor = int(config.get('Elevator', 'rs485_floor', fallback=0))
         if rs485_floor != 0:
-            state = {'floor': floor}
-            if rs485_floor == floor:
-                state['state'] = 'off'
+         if ['value'} == '0300000000000000' :
+           # state = {'floor': floor}
+             state = {'state': 'off'}
+           # if rs485_floor == floor:
+               # state['state'] = 'off'
         else:
             state = {'state': 'off'}
         logtxt = '[MQTT publish|elevator] data[{}]'.format(state)
