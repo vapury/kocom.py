@@ -24,7 +24,7 @@ import configparser
 
 
 # define -------------------------------
-SW_VERSION = 'KOCOM 1.0'
+SW_VERSION = 'KOCOM 2.0'
 CONFIG_FILE = 'kocom.conf'
 BUF_SIZE = 100
 
